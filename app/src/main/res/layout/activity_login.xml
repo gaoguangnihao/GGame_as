@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView_User"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="179dp"
+        android:text="User:" />
+
+    <TextView
+        android:id="@+id/textView_PassW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_User"
+        android:layout_centerVertical="true"
+        android:text="PassW:" />
+
+    <EditText
+        android:id="@+id/editText_PassW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView_PassW"
+        android:layout_alignRight="@+id/button_cancel"
+        android:layout_toRightOf="@+id/textView_PassW"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/editText_User"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView_User"
+        android:layout_alignRight="@+id/editText_PassW"
+        android:layout_toRightOf="@+id/textView_PassW"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/button_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/button_sure"
+        android:layout_marginBottom="18dp"
+        android:layout_toRightOf="@+id/textView_User"
+        android:text="Cancel" />
+
+    <Button
+        android:id="@+id/button_sure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_cancel"
+        android:layout_toRightOf="@+id/textView_User"
+        android:text="Register" />
+
+    <Button
+        android:id="@+id/button_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_sure"
+        android:layout_alignRight="@+id/button_sure"
+        android:layout_toRightOf="@+id/textView_User"
+        android:text="@string/start" />
+
+</RelativeLayout>
