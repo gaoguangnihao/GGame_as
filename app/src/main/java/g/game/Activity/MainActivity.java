@@ -1,15 +1,18 @@
 package g.game.Activity;
 
-import g.game.R;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
-import android.view.Window;
 import android.view.WindowManager;
 
+import g.game.R;
+
+/**
+ *  Entry of GGame
+ */
 public class MainActivity extends Activity {
 
 	private String TAG = "MainActivity";
