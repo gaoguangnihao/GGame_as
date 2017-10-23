@@ -9,7 +9,7 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name="g.game.Activity.MainActivity"
-            android:theme="@android:style/Theme.Dialog"
+            android:theme="@android:style/Theme.Black"
             android:configChanges="keyboardHidden|orientation">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
